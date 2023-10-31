@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mountain.Wildcat.Api", "Mountain.Wildcat.Api\Mountain.Wildcat.Api.csproj", "{EAD5FBF6-2382-4288-9F4B-133079E80515}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mountain.Wildcat.Data", "Mountain.Wildcat.Data\Mountain.Wildcat.Data.csproj", "{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{EAD5FBF6-2382-4288-9F4B-133079E80515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD5FBF6-2382-4288-9F4B-133079E80515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAD5FBF6-2382-4288-9F4B-133079E80515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
