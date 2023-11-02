@@ -1,7 +1,7 @@
-using Emerald.Tiger.Domain.Catalog;
-using Microsoft. EntityFrameworkCore;
-namespace Emerald.Tiger.Data
-{
+using Mountain.Wildcat.Domain.Catalog;
+using Microsoft.EntityFrameworkCore;
+
+namespace Mountain.Wildcat.Data{
     public static class DbInitializer
     {
         public static void Initialize (ModelBuilder builder)

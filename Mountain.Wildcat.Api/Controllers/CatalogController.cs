@@ -1,8 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Mountain.Wildcat.Domain.Catalog;
-
-using Emerald.Tiger.Domain.Catalog;
-using Emerald.Tiger.Data;
+using Mountain.Wildcat.Data;
 
 
 namespace Mountain.Wildcat.Api.Controllers
@@ -12,9 +10,9 @@ namespace Mountain.Wildcat.Api.Controllers
     public class CatalogController : ControllerBase
     {
 
-        private readonly StoreContext_db;
+        private readonly StoreContext _db;
 
-        public CatalogController(StoreContext_db)
+        public CatalogController(StoreContext db)
         {
             _db = db;
         }

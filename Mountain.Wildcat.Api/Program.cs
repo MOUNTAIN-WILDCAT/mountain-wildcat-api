@@ -1,4 +1,4 @@
-using Emerald.Tiger.Data;
+using Mountain.Wildcat.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 
@@ -7,9 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.addDbConetext<StoreContext>(
-    options => options.UseSqlite("Data source =../Registrar.sqlite",
-    b => b.MigrationsAssembly("Emerald.Tiger.Api"))
+builder.Services.AddDbContext<StoreContext>(
+    options => options.UseSqlite(
+        "Data source =../Registrar.sqlite",
+        b => b.MigrationsAssembly("Mountain.Wildcat.Api")
+    )
 );
 
 builder.Services.AddEndpointsApiExplorer();
