@@ -19,4 +19,8 @@ namespace Mountain.Wildcat.Data
             DbInitializer.Initialize(builder);
         }
     }
+
+    public class Order
+    {
+    }
 }
