@@ -1,5 +1,6 @@
 ﻿using Mountain.Wildcat.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
+using Mountain.Wildcat.Domain.Orders;
 
 namespace Mountain.Wildcat.Data
 {
@@ -20,7 +21,5 @@ namespace Mountain.Wildcat.Data
         }
     }
 
-    public class Order
-    {
-    }
+
 }
