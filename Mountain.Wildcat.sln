@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mountain.Wildcat.Api", "Mou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mountain.Wildcat.Data", "Mountain.Wildcat.Data\Mountain.Wildcat.Data.csproj", "{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E4EF455D-25E5-4717-98D5-FC820AA21B6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mountain.Wildcat.Domain.Tests", "tests\Mountain.Wildcat.Domain.Tests\Mountain.Wildcat.Domain.Tests.csproj", "{C8AC556D-F295-4779-90C2-5362F25AA54B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB30F9EA-1A1F-4CD2-BDD1-AD7C30788F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AC556D-F295-4779-90C2-5362F25AA54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AC556D-F295-4779-90C2-5362F25AA54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AC556D-F295-4779-90C2-5362F25AA54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AC556D-F295-4779-90C2-5362F25AA54B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8AC556D-F295-4779-90C2-5362F25AA54B} = {E4EF455D-25E5-4717-98D5-FC820AA21B6D}
 	EndGlobalSection
 EndGlobal
