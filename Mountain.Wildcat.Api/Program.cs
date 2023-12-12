@@ -9,7 +9,7 @@ String storeConnectionString = builder.Configuration.GetConnectionString("StoreC
 
 builder.Services.AddDbContext<StoreContext>(Options =>
     Options.UseSqlServer(storeConnectionString,
-    b => b.MigrationsAssembly("Emerald.Tiger.Api"))
+    b => b.MigrationsAssembly("Mountain.Wildcat.Api"))
     );
     
 // Add services to the container.
