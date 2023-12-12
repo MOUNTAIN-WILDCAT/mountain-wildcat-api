@@ -11,6 +11,7 @@ string authority = builder.Configuration["Auth0:Authority"]??
 
 string audience = builder.Configuration["Auth0:Audience"] ??
     throw new ArgumentNullException("Auth0:Authority");
+
 // Add services to the container.
 
 builder.Services.AddControllers();
