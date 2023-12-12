@@ -4,6 +4,16 @@ using Microsoft.EntityFrameworkCore.Sqlite;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add var for config
+String storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
+    throw new ArgumentNullException("ConnectionString:StoreConnection");   
+
+// Update DbContext to use SQL Server and the connction string
+builder.Services.AddDbContext<StoreContext>(Options =>
+    Options.UseSqlServer(storeConnectionString,
+    b => b.MigrationsAssembly("Mountain.Wildcat.Api"))
+    );
+
 // Add services to the container.
 
 builder.Services.AddControllers();
